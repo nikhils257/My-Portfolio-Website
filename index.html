@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nikhil — Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">NK<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Menu" id="navToggle">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg-text" aria-hidden="true">DEV</div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Hello, I'm</p>
+      <h1 class="hero-name">Nikhil<br/><span class="hero-name-accent">Wakale.</span></h1>
+      <p class="hero-role">Full-Stack Developer &amp; Problem Solver</p>
+      <p class="hero-desc">I build fast, accessible web apps from database to interface. Currently interning at Thiranex, turning ideas into working products.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-label">01 — About</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title">Building things<br/>that actually work.</h2>
+          <p>I'm a web developer passionate about creating clean, performant applications. My approach is simple: understand the problem deeply, then engineer the right solution — not the flashiest one.</p>
+          <p>When I'm not coding, I'm exploring new technologies, contributing to open source, or sketching out side project ideas that may (or may not) ever see the light of day.</p>
+          <div class="about-stats">
+            <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Projects Built</span></div>
+            <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Tech Stacks</span></div>
+            <div class="stat"><span class="stat-num">1</span><span class="stat-label">Active Internship</span></div>
+          </div>
+        </div>
+        <div class="about-card">
+          <div class="card-inner">
+            <div class="card-avatar">NK</div>
+            <div class="card-info">
+              <p class="card-name">Nikhil Wakale</p>
+              <p class="card-role">Full-Stack Developer</p>
+              <div class="card-tags">
+                <span>Open to Work</span>
+                <span>Remote</span>
+              </div>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/nikhils257" target="_blank" class="card-link">GitHub ↗</a>
+              <a href="https://www.linkedin.com/in/nikhil-wakale-900905375" target="_blank" class="card-link">LinkedIn ↗</a>
+              <a href="#" class="card-link">Resume ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <div class="section-label light">02 — Skills</div>
+      <h2 class="section-title light">Tools I work with.</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3 class="skill-group-title">Frontend</h3>
+          <ul class="skill-list">
+            <li>HTML5 &amp; CSS3</li>
+            <li>JavaScript (ES6+)</li>
+            <li>React.js</li>
+            <li>Vue.js</li>
+            <li>Responsive Design</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">Backend</h3>
+          <ul class="skill-list">
+            <li>Node.js &amp; Express</li>
+            <li>Python / Django</li>
+            <li>REST API Design</li>
+            <li>Authentication (JWT)</li>
+            <li>Server Deployment</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">Database</h3>
+          <ul class="skill-list">
+            <li>MongoDB &amp; Mongoose</li>
+            <li>MySQL / PostgreSQL</li>
+            <li>Redis (basics)</li>
+            <li>Database Design</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">Tools &amp; Infra</h3>
+          <ul class="skill-list">
+            <li>Git &amp; GitHub</li>
+            <li>Vercel / Netlify</li>
+            <li>Docker (basics)</li>
+            <li>VS Code</li>
+            <li>Postman</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-label">03 — Projects</div>
+      <h2 class="section-title">Things I've made.</h2>
+      <div class="projects-grid" id="projectsGrid">
+        <div class="projects-loading">
+          <div class="spinner"></div>
+          <p>Loading projects...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <div class="section-label light">04 — Contact</div>
+      <h2 class="section-title light">Let's work together.</h2>
+      <p class="contact-intro">Have a project in mind or just want to say hi? My inbox is always open.</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">✉</span>
+            <div>
+              <p class="contact-item-label">Email</p>
+              <a href="mailto:nikhilwakale10@gmail.com" class="contact-item-value">nikhilwakale10@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">⊞</span>
+            <div>
+              <p class="contact-item-label">GitHub</p>
+              <a href="https://github.com/nikhils257" target="_blank" class="contact-item-value">https://github.com/nikhils257</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">in</span>
+            <div>
+              <p class="contact-item-label">LinkedIn</p>
+              <a href="https://www.linkedin.com/in/nikhil-wakale-900905375" target="_blank" class="contact-item-value">https://www.linkedin.com/</a>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required/>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@email.com" required/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?" required/>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="submitBtn">Send Message</button>
+          <div class="form-status" id="formStatus"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-logo">NK<span class="dot">.</span></p>
+      <p class="footer-copy">Designed &amp; Built by Nikhil Kumar — Thiranex Internship Project</p>
+      <p class="footer-year">© 2024</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
